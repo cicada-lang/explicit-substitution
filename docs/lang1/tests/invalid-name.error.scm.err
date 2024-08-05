@@ -1,0 +1,5 @@
+[matchExp] A name should not include subscripts: x₀
+
+ 1 |(lambda (x₀) x₀)
+ 2 |
+
