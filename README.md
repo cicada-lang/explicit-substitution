@@ -1,6 +1,17 @@
-# Lambda Calculus
+# Explicit Substitution
 
-An implementation of [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calculus).
+An interpreter of lambda calculus by [explicit substitution](https://en.wikipedia.org/wiki/Explicit_substitution).
+
+- The meaning of scheme's `(let)` can be viewed as explicit substitution.
+
+```scheme
+(define name body)
+(define (name arg ...) body)
+(import name ... "./file.scm")
+
+(lambda (name) ret)
+(let ([name exp] ...) body)
+```
 
 ## Usages
 
@@ -9,10 +20,10 @@ An implementation of [lambda calculus](https://en.wikipedia.org/wiki/Lambda_calc
 Install it by the following command:
 
 ```sh
-npm install -g @cicada-lang/lambda
+npm install -g @cicada-lang/explicit-substitution
 ```
 
-The command-line program is called `lambda`.
+The command-line program is called `explicit-substitution`.
 
 ## Development
 

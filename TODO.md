@@ -1,5 +1,3 @@
-rename lang1 to lang
-
 > 在 explicit-substitution 中实验，然后开始 cicada。
 
 支持 `(assert-equal)` 与 `(assert-not-equal)`

@@ -15,10 +15,10 @@
     "build": "tsc",
     "build:watch": "tsc --watch",
     "test:node": "node --test",
-    "test:lang1:tests": "test-runner snapshot './bin/explicit-substitution.js lang1' 'docs/lang1/**/*.scm' --exclude 'docs/lang1/**/*.error.scm'",
-    "test:lang1:tests-error": "test-runner snapshot-error './bin/explicit-substitution.js lang1' 'docs/lang1/**/*.error.scm'",
-    "test:lang1": "npm run test:lang1:tests && npm run test:lang1:tests-error",
-    "test": "npm run test:node && npm run test:lang1",
+    "test:lang:tests": "test-runner snapshot './bin/explicit-substitution.js run' 'docs/lang/**/*.scm' --exclude 'docs/lang/**/*.error.scm'",
+    "test:lang:tests-error": "test-runner snapshot-error './bin/explicit-substitution.js run' 'docs/lang/**/*.error.scm'",
+    "test:lang": "npm run test:lang:tests && npm run test:lang:tests-error",
+    "test": "npm run test:node && npm run test:lang",
     "format": "prettier src docs --write"
   },
   "dependencies": {
