@@ -11,7 +11,7 @@ import {
 } from "../exp/index.ts"
 import { lookup } from "./lookup.ts"
 
-// NOTE `substitute` should not call `reduce.
+// NOTE `substitute` should not call `reduce`.
 
 export function substitute(binds: Binds, body: Exp): Exp {
   binds = bindsTakeNames(binds, Exps.expFreeNames(new Set(), body))
